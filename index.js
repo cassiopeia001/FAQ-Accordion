@@ -10,7 +10,7 @@ function showAnswer(){
     const img= document.querySelector(`img[data-index="${index}"]`);
     
 
-    if(answer.style.display=== 'none'){
+    if(answer.style.display=== ''){
 
         answer.style.display= 'block';
         img.src= 'assets/images/icon-minus.svg';
