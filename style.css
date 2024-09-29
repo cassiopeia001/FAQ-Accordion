@@ -53,31 +53,30 @@ hr{
     border: 0.5px solid var(--Light-pink);
     margin-bottom: 1.5rem;
 }
-.question-container{
+summary{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.5rem;
-}
-.question-container p{
     font-weight: 600;
     color: var(--Dark-purple);
 }
-.question-container p:hover{
+summary:hover{
     cursor: pointer;
+    
     color: var(--light-purple);
 }
-.question-container img{
+.icon{
     width: 1.7rem;
 } 
-.answer-container{
+.answer{
     margin-bottom: 1.5rem;
-    display: none;
-}
-.answer-container p{
     color: var(--Grayish-purple);
     line-height: 1.5;
 }
+details[open] .icon{
+    content: url(assets/images/icon-minus.svg);
+
 @media screen and (max-width: 600px) {
 
     body{
